@@ -1,0 +1,33 @@
+.movieSetcion {
+  margin-top: 10px;
+}
+
+.movieWrapper {
+  display: flex;
+  color: white;
+}
+
+.moviePoster {
+  margin-right: 20px;
+  width: 20%;
+  height: 20%;
+}
+
+.infoWrapper {
+  width: calc(100% / 2);
+}
+
+.movieCredits {
+  color: #f26739;
+  text-decoration: none;
+}
+
+.creditsWrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.movieCredits:not(:last-child) {
+  margin-right: 10px;
+}

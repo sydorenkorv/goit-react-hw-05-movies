@@ -1,0 +1,18 @@
+.movieList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movieLink {
+  width: 200px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.movieTitle {
+  color: white;
+}
