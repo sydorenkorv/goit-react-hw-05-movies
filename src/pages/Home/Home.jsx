@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { getTrends } from 'api/api';
 import { MovieList } from 'components/MovieList/MovieList';
+import { Notify } from 'notiflix';
 
 function Home() {
   const [trends, setTrends] = useState([]);
@@ -18,6 +19,11 @@ function Home() {
     };
     fetchTrends();
   }, []);
+
+  useEffect(() => {
+    if (error === null) return;
+    Notify.failure(`some error occured ${error}`);
+  }, [error]);
 
   return (
     <>
